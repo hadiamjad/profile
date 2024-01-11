@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<!-- Link to Bootstrap JS and jQuery -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Haddi Amjad</title>
+    <style>
+        body {
+			background-color: #e6e7ea;
+			font-family: Consolas, monospace;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: #123456;
+			color: #FFFFFF;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 1em;
+			position: sticky;
+			top: 0;
+			z-index: 1;
+		}
+
+		h1 {
+			font-size: 1.5em;
+			margin: 0;
+		}
+
+		nav {
+			display: flex;
+		}
+
+		nav a {
+			color: #FFFFFF;
+			margin-right: 1em;
+			text-decoration: none;
+		}
+
+		nav img {
+			height: 1.5em;
+			margin-right: 1em;
+		}
+
+		section {
+			margin: 1em;
+		}
+
+		h2 {
+			font-size: 1.2em;
+			margin-bottom: 0.5em;
+		}
+
+		h3 {
+			font-size: 1.1em;
+			margin-bottom: 0.5em;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			margin-bottom: 0.5em;
+		}
+
+		a {
+			color: #0047AB;
+		}
+
+		hr {
+			border-color: #123456;
+			background-color: #123456;
+		}
+
+        #imageCanvas {
+            width: 600px; /* Specify the canvas size */
+            height: 400px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .image-item {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body><header>
+		<h1>Abdul Haddi Amjad</h1>
+		<nav>
+			<a style="font-size:24px; text-decoration: none;" class="fa fa-envelope-o"
+				href="mailto:hadiamjad@vt.edu"></a>
+			<a style="font-size:24px; text-decoration: none;" class="fa"
+				href="https://github.com/hadiamjad">&#xf09b;</a>
+			<a style="font-size:24px; text-decoration: none;" class="fa"
+				href="https://www.linkedin.com/in/abdul-haddi-amjad-702485161/">&#xf08c;</a>
+			<a style="font-size:24px; text-decoration: none;" class="fa fa-graduation-cap"
+				href="https://scholar.google.com/citations?hl=en&user=Rs-cvJUAAAAJ&view_op=list_works&gmla=AJsN-F7gUnYHlpx90onMO8nA5en1PLUqLqo4kdmMn4hKlamxC2-1Hu7yONgBSg0ORuztRToYHDVPAKUDoFWb9IeOH52RbUTCHyxv0iPZ_XT5560L-If_Eds"></a>
+			<a style="font-size:24px; text-decoration: none;" class="fa fa-twitter"
+				href="https://twitter.com/haddiamjad"></a>
+		</nav>
+	</header>
+	<section>
+		<img src="images/profile.jpeg" alt="Profile Picture" style="float: left; margin-right: 1em; width:130px">
+		<p style="text-align: left;">Amjad is a Ph.D. student at Virginia Tech, advised by <a
+				style="color:var(--wp--preset--color--dark-gray); font-weight: bold;"
+				href="https://people.cs.vt.edu/~gulzar/">Dr. Muhammad Ali Gulzar</a>
+			from Virginia Tech and <a style="color:var(--wp--preset--color--dark-gray); font-weight: bold;"
+				href="https://web.cs.ucdavis.edu/~zubair/">Dr. Zubair Shafiq</a> from UC Davis. His research focuses on
+			using software
+			engineering techniques to tackle internet security and privacy challenges.</p>
+
+		<p style="text-align: left;"">In today's digital landscape, third-party JavaScript plays a vital role in both tracking and enabling various functionalities on modern websites. However, existing content blocking approaches encounter significant hurdles when it comes to distinguishing between tracking and non-tracking resources originating from the same network location. These approaches heavily rely on manually curated filter lists, which impede scalability and lack the necessary contextual information to effectively detect tracking behavior.
+				To tackle these challenges, Amjad's research focuses on the program analysis of JavaScript by employing advanced dynamic analysis and code refactoring techniques. Specifically, it involves capturing and analyzing the dynamic execution context, which includes essential details such as the call stack and calling context of each function within the JavaScript code. This enables to generate privacy-safe variant of the tracking JavaScript code.  By doing so, Amjad's research aims to provide a more comprehensive and accurate understanding of tracking behavior, ultimately improving the efficacy of content blocking tools in modern web environments.</p>
+			<p>For more: <a href=" index-img/CV.pdf">CV</a> [Last updated Feb'23]</p>
+		<div style="clear: both;"></div>
+	</section>
+	<hr>
+	<section>
+		<h1>News</h1>
+		<br>
+		<ul>
+			<li><i class="fa fa-star" style="color: red;"></i> <strong>[Nov'23] Talk at <a
+				href="https://privacysandbox.com/">Google</a></strong> </li>
+			<li><i class="fa fa-star" style="color: red;"></i> <strong>[Oct'23] Talk at <a
+				href="https://youtu.be/-KkMWUaajhU?t=27712">Ad-Filtering Dev Summit 2023</a></strong> </li>
+			<li><i class="fa fa-star" style="color: red;"></i> <strong>[Sep'23] Attended <a
+				href="https://properdata.eng.uci.edu/2023/08/08/properdata-annual-symposium-2023/">ProperData Symposium</a></strong> </li>
+			<li><i class="fa fa-window-minimize"></i> [Aug'23] Member of the Artifacts Review Committee at <a
+				href="https://petsymposium.org/artifacts.php">PETS 2024</a> </li>
+			<li><i class="fa fa-window-minimize"></i> [Aug'23] Invited speaker at <a
+				href="https://adfilteringdevsummit.com/public/-NXuG6IckpLeVt7jyeIm">Ad-Filtering Dev Summit 2023</a></li>
+			<li><i class="fa fa-window-minimize"></i> [Jul'23] Presented at <a
+				href="https://petsymposium.org/2023/">PETS 2023</a> </li>
+			<li><i class="fa fa-window-minimize"></i> [Jun'23] Started summer internship at <a
+				href="https://brave.com/">Brave</a></li>
+			<li><i class="fa fa-window-minimize"></i> [May'23] Attended <a
+				href="https://sp2023.ieee-security.org/#:~:text=The%20Symposium%20will%20be%20held,Online%20at%20the%20Hyatt%20Regency.">IEEE
+				S&P</a></li>
+			<li><i class="fa fa-window-minimize"></i> [Apr'23] Got travel grant for <a
+						href="https://sp2023.ieee-security.org/#:~:text=The%20Symposium%20will%20be%20held,Online%20at%20the%20Hyatt%20Regency.">IEEE
+						S&P</a> </li>
+			<li><i class="fa fa-window-minimize"></i> [Apr'23] Got return offer from <a
+						href="https://brave.com/">Brave</a> for summer internship</li>
+<!-- 			<li><i class="fa fa-window-minimize"></i> [Apr'23] Met <a
+						href="https://kirshanthans.github.io/#:~:text=I%20am%20Kirshanthan%20(%E2%80%9CKrish%E2%80%9D,%2C%20and%20high%2Dperformance%20computing.">Kirshanthan
+						Sundararajah</a></li>
+			<li><i class="fa fa-window-minimize"></i> [Mar'23] Paper got accepted at <a
+					href="https://petsymposium.org/2023/">PoPETS 2023</a></li> -->
+<!-- 			<li><i class="fa fa-window-minimize"></i> [Feb'23] Paper got conditionally accepted at <a
+					href="https://petsymposium.org/2023/">PoPETS 2023</a></li>
+			<li><i class="fa fa-window-minimize"></i> [Nov'22] Attended <a
+					href="https://properdata.eng.uci.edu/2022/10/21/properdata-annual-symposium-2022/">ProperData
+					Symposium 2022</a></li> -->
+			<!-- <li><i class="fa fa-window-minimize"></i> [May'22] Started summer internship at <a
+					href="https://brave.com/">Brave</a></li> -->
+			<!-- <li><i class="fa fa-window-minimize"></i> [Oct'22] Invited for talk at <a
+					href="https://adfilteringdevsummit.com/">Ad-Filtering Developer Summit 2022</a></li>
+			<li><i class="fa fa-window-minimize"></i> [Nov'21] Presented at <a
+					href="https://dl.acm.org/doi/abs/10.1145/3487552.3487855">IMC'21</a></li> -->
+
+		</ul>
+	</section>
+	<hr>
+	<section>
+		<h1>Selected Publications</h1>
+		<br>
+		<ul>
+			<li>
+				<p style="margin: 0;"><strong><a href="https://arxiv.org/pdf/2302.01182.pdf">Blocking JavaScript without
+							Breaking the Web: An Empirical Investigation</a></strong></p>
+				<p style="margin: 0;"><strong>Abdul Haddi Amjad</strong>, Muhammad Ali Gulzar, Zubair Shafiq</p>
+				<p style="margin: 0;">Proceedings on Privacy Enhancing Technologies Symposium (PETS) 2023</p>
+				<p style="margin: 0;"><a class="fa fa-file-word-o" href="https://arxiv.org/pdf/2302.01182.pdf"></a> <a
+						class="fa fa-code"
+						href="https://github.com/hadiamjad/Blocking-JavaScript-without-Breaking-the-Web"></a></p>
+			</li>
+			<br>
+			<li>
+				<p style="margin: 0;"><strong><a href="https://dl.acm.org/doi/abs/10.1145/3487552.3487855">TrackerSift:
+							untangling mixed tracking and functional web resources</a></strong></p>
+				<p style="margin: 0;"><strong>Abdul Haddi Amjad</strong>, Danial Saleem, Muhammad Ali Gulzar, Zubair
+					Shafiq</p>
+				<p style="margin: 0;">Internet Measeurment Conference (IMC) 2021</p>
+				<p style="margin: 0;"><a class="fa fa-file-word-o"
+						href="https://dl.acm.org/doi/abs/10.1145/3487552.3487855"></a> <a class="fa fa-code"
+						href="https://github.com/hadiamjad/TrackerSift"></a> <a class="fa fa-youtube-square"
+						href="https://www.youtube.com/watch?v=jTG93jNp05c"></a></p>
+			</li>
+		</ul>
+	</section>
+	<hr>
+	<section>
+		<h1>Talks</h1>
+		<br>
+		<ul>
+			<li>
+				<p style="margin: 0;"><strong><a href="https://youtu.be/yiNOaq4Py48?t=27247">What's the next era of
+							content blockers?</a></strong></p>
+				<p style="margin: 0;">Ad-Filtering Developer Summit</p>
+				<p style="margin: 0;">Amsterdam, 2022</p>
+				<p style="margin: 0;"><a class="fa fa-youtube-square" href="https://youtu.be/yiNOaq4Py48?t=27247"></a>
+				</p>
+			</li>
+			<br>
+			<li>
+				<p style="margin: 0;"><strong><a href="https://www.youtube.com/watch?v=V9CG0wdmfY4">How to disentangle
+							tracking code from functional?</a></strong></p>
+				<p style="margin: 0;">Ad-Filtering Developer Summit</p>
+				<p style="margin: 0;">Remote, 2021</p>
+				<p style="margin: 0;"><a class="fa fa-youtube-square"
+						href="https://www.youtube.com/watch?v=V9CG0wdmfY4"></a></p>
+			</li>
+
+		</ul>
+	</section>
+	<hr>
+	<section>
+		<h1>Experience</h1>
+		<br>
+		<ul>
+			<li>
+				<p style="margin: 0;"><strong><a href="https://brave.com/">Brave</a></strong></p>
+				<p style="margin: 0;">Data Privacy Research Intern</p>
+				<p style="margin: 0;"> Summer 2023</p>
+				<p style="margin: 0;"> Worked on Solana NFT token-gating for Web3 <a href="https://github.com/brave/brave-talk">brave-talk</a>  calls</p>
+			</li>
+			<br>
+			<li>
+				<p style="margin: 0;"><strong><a href="https://people.cs.vt.edu/~gulzar/students/">SEED Lab Virginia
+							Tech</a></strong></p>
+				<p style="margin: 0;">Graduate Research Assistant</p>
+				<p style="margin: 0;"> August 2021 to Current</p>
+			</li>
+			<br>
+			<li>
+				<p style="margin: 0;"><strong><a href="https://brave.com/">Brave</a></strong></p>
+				<p style="margin: 0;">Ads and Privacy Research Engineer Intern</p>
+				<p style="margin: 0;"> Summer 2022</p>
+				<p style="margin: 0;"> Worked on testing E2E encryption for <a href="https://github.com/brave/brave-talk">brave-talk</a> calls</p>
+			</li>
+			<br>
+			<li>
+				<p style="margin: 0;"><strong><a href="https://www.educative.io/">Educative</a></strong></p>
+				<p style="margin: 0;">Educative Answers Technical Lead </p>
+				<p style="margin: 0;"> May 2018 to May 2021</p>
+			</li>
+		</ul>
+	</section>
+	<hr>
+	<section>
+		<h1>Education</h1>
+		<br>
+		<ul>
+			<li>
+				<p style="margin: 0;"><strong><a href="https://www.vt.edu/">Virginia Tech</a></strong></p>
+				<p style="margin: 0;">Ph.D Student </p>
+				<p style="margin: 0;"> August 2021 to Current</p>
+			</li>
+			<br>
+			<li>
+				<p style="margin: 0;"><strong><a href="https://www.nu.edu.pk/">FAST-NUCES</a></strong></p>
+				<p style="margin: 0;">Bachelor in Computer Science</p>
+				<p style="margin: 0;"> August 2017 to August 2021</p>
+			</li>
+		</ul>
+	</section>
+	<hr>
+    <section>
+    <div id="imageCanvas" class="shadow-lg rounded">
+        <!-- Images will be loaded here by JavaScript -->
+    </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
